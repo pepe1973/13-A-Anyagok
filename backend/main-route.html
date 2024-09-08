@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../info-bg.png"
+            type="image/x-icon"
+        />
+        <title>Main route és a statikus mappa</title>
+    </head>
+    <body>
+        <div class="targyak">
+            <a href="./index.html">Vissza</a>
+        </div>
+        <div class="container">
+            <h1>Node.js + express + mongodb</h1>
+            <h3>Main route és a statikus mappa</h3>
+            <div class="tartalom">
+                <h4>server.js:</h4>
+                <p>
+                    Nyissunk meg a Visual Studio-t és szerkesszük a
+                    <span class="kod">server.js</span> állományt.
+                </p>
+                <div class="kep">
+                    <img src="./images/kep-016.png" />
+                </div>
+                <p>Vagy a kommentek nélkül.</p>
+                <div class="kep">
+                    <img src="./images/kep-017.png" />
+                </div>
+                <p>
+                    A <code>path.resolve(__dirname, 'public')</code> egy
+                    abszolút elérési úttal tér vissza a szerver gyökérelemétől,
+                    ezért független lesz a szerver helyétől.
+                </p>
+                <h4>Mappák és állományok:</h4>
+                <p>Kicsit változik a projekt struktúrája.</p>
+                <div class="kep">
+                    <img src="./images/kep-018.png" />
+                </div>
+                <p>Nézzük egyenként.</p>
+                <p><span class="kod">index.ejs</span></p>
+                <div class="kep">
+                    <img src="./images/kep-019.png" />
+                </div>
+                <p>
+                    Figyeljük meg a stíluslapra való hivatkozást:
+                    <code>/css/stilus.css</code>. Az útvonal elejének a
+                    beállítását a "statikus mappa beállítása" résznél
+                    elvégeztük!
+                </p>
+                <p><span class="kod">stilus.css</span></p>
+                <div class="kep">
+                    <img src="./images/kep-020.png" />
+                </div>
+                <p><span class="kod">mainControllers.js</span></p>
+                <div class="kep">
+                    <img src="./images/kep-021.png" />
+                </div>
+                <p><span class="kod">mainRoutes.js</span></p>
+                <div class="kep">
+                    <img src="./images/kep-022.png" />
+                </div>
+                <p>És végül a <span class="kod">server.js</span></p>
+                <div class="kep">
+                    <img src="./images/kep-023.png" />
+                </div>
+                <p>Vagy a kommentek nélkül.</p>
+                <div class="kep">
+                    <img src="./images/kep-024.png" />
+                </div>
+                <p>A böngészőben ez látható.</p>
+                <div class="kep">
+                    <img src="./images/kep-025.png" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

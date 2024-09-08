@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../info-bg.png"
+            type="image/x-icon"
+        />
+        <title>Mappastruktúra kialakítása</title>
+    </head>
+    <body>
+        <div class="targyak">
+            <a href="./index.html">Vissza</a>
+        </div>
+        <div class="container">
+            <h1>Node.js + express + mongodb</h1>
+            <h3>Mappastruktúra kialakítása</h3>
+            <div class="tartalom">
+                <h4>Állományok:</h4>
+                <p>Nyissunk meg a GitBash-t és üssük be a következőt.</p>
+                <p><code>touch server.js .env .gitignore</code></p>
+                <ul>
+                    <li>
+                        <span class="kod">server.js</span> - ebben az
+                        állományban kezeljük a szerver-t.
+                    </li>
+                    <li>
+                        <span class="kod">.env</span> - környezeti változók
+                        kezelése (belépési azonosítók, jelszavak, port-számok
+                        stb.).
+                    </li>
+                    <li>
+                        <span class="kod">.gitignore</span> - azon állományok és
+                        mappák gyűjtőhelye, amelyeket nem akarunk verziókezelés
+                        alá vonni.
+                    </li>
+                </ul>
+                <h4>Mappák:</h4>
+                <p>Nyissunk meg a Git Bash-t és üssük be a következőt.</p>
+                <p>
+                    <code
+                        >mkdir public middlewares models views controllers
+                        routes</code
+                    >
+                </p>
+                <ul>
+                    <li>
+                        <span class="kod">public</span> - statikus állományok
+                    </li>
+                    <li>
+                        <span class="kod">middlewares</span> - "köztes"
+                        metódusok
+                    </li>
+                    <li><span class="kod">models</span> - mondodb modellek</li>
+                    <li>
+                        <span class="kod">views</span> - "megjelenítendő"
+                        állományok
+                    </li>
+                    <li>
+                        <span class="kod">controllers</span> - végponti
+                        (endpoints) crud függvények
+                    </li>
+                    <li>
+                        <span class="kod">routes</span> - végpontok (endpoints)
+                        kezelése
+                    </li>
+                </ul>
+                <div class="kep">
+                    <img src="./images/kep-011.png" />
+                </div>
+                <p>
+                    Ha nincs Git Bash beállítva, akkor a File Manager is
+                    használható, vagy egy másik parancssor.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

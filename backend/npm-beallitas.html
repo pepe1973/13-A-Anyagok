@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../stilus.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="../info-bg.png"
+            type="image/x-icon"
+        />
+        <title>npm csomagok beállítása</title>
+    </head>
+    <body>
+        <div class="targyak">
+            <a href="./index.html">Vissza</a>
+        </div>
+        <div class="container">
+            <h1>Node.js + express + mongodb</h1>
+            <h3>npm csomagok beállítása</h3>
+            <div class="tartalom">
+                <p>Nyissunk meg a parancssort és üssük be a következőt.</p>
+                <p><code>npm --version</code></p>
+                <p>
+                    Ha a Node.js telepítve van, akkor az npm csomagkezelő is. Ha
+                    úgy érezzük régi a verziószám, akkor frissítsük. Ilyenkor
+                    irány a
+                    <a
+                        href="https://nodejs.org/en"
+                        target="_blank"
+                        >honlap</a
+                    >.
+                </p>
+                <p>
+                    Ha nincs telepítve, akkor főleg irány a
+                    <a
+                        href="https://nodejs.org/en"
+                        target="_blank"
+                        >honlap</a
+                    >.
+                </p>
+                <h4>package.json:</h4>
+                <p>
+                    Hozzunk létre egy mappát
+                    <span class="kod">backend</span> néven.
+                </p>
+                <p>Ha minden rendben akkor adjuk ki a következő utasítást.</p>
+                <p><code>npm init -y</code></p>
+                <p>
+                    Ennek eredményeképpen kapunk a mappában egy
+                    <span class="kod">package.json</span> állományt.
+                    Szerkesszük:
+                </p>
+                <div class="kepek">
+                    <div class="kep"><img src="./images/kep-008.png" /></div>
+                    <div class="kep"><img src="./images/kep-009.png" /></div>
+                </div>
+                <h4>Szükséges npm csomagok installálása:</h4>
+                <p>Telepítsük a következő npm csomagokat.</p>
+                <p><code>npm install dotenv express ejs</code></p>
+                <p>Majd a következő npm csomagot csak fejlesztéshez.</p>
+                <p><code>npm install -D nodemon</code></p>
+                <p>Ekkor a következő dolgok jönnek létre:</p>
+                <ul>
+                    <li>
+                        <span class="kod">node_modules</span> - npm csomagok
+                        tárolója
+                    </li>
+                    <li>
+                        <span class="kod">package-lock.json</span> - függőségek
+                        listázása
+                    </li>
+                </ul>
+                <p class="fontos">
+                    Egyiket se szerkesszük, ha nem tudjuk mit csinálunk!
+                </p>
+                <div class="kep"><img src="./images/kep-010.png" /></div>
+            </div>
+        </div>
+    </body>
+</html>
